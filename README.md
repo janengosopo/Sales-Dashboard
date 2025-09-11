@@ -53,8 +53,8 @@ YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue
 | File / Folder             | Description                    |
 | ------------------------- | ------------------------------ |
 | **README.md**             | Main project documentation     |
-| **Sales\_Dashboard.pbix** | Power BI dashboard file        |
-| **Sales\_Dashboard.png**                | Dashboard screenshot|
+| **Sales\Dashboard.pbix** | Power BI dashboard file        |
+| **Sales\Dashboard.png**                | Dashboard screenshot|
 
 ---
 
@@ -62,11 +62,11 @@ YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue
 
 ### Option 1: Download the PBIX
 
-1. Click on Sales_Dashboard.pbix in this repository.
+1. Click on Sales Dashboard.pbix in this repository.
 2. Click **View Raw** → **Download**.
 3. Open it in **Power BI Desktop**.
 
 ### Option 2: View Screenshot
 
-For a quick preview, click on Sales_Dashboard.png in this repository.
+For a quick preview, click on Sales Dashboard.png in this repository.
 
