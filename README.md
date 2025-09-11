@@ -25,8 +25,8 @@ This dashboard answers:
 
 ### a) Data Modeling
 - Designed a star schema:
-  - **Fact table:** `Sales`
-  - **Dimension tables:** `Products`, `Customer`, `Location`, `Date`
+  - Fact table: Sales
+  - Dimension tables: Product, Customer, Location, Date
 - Optimized relationships for faster filtering and accurate aggregations.
 
 ### b) DAX Measures
@@ -36,7 +36,7 @@ Total Profit  = SUM(Sales[Profit])
 Margin        = DIVIDE([Total Profit], [Total Revenue])
 Last year Revenue = CALCULATE ([Total Revenue],SAMEPERIODLASTYEAR ( 'Date'[Date] ))
 YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue])
-````
+```
 
 ### c) Visuals and Interactivity
 
@@ -63,7 +63,7 @@ YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue
 
 ### Option 1: Download the PBIX
 
-1. Click on **`Sales_Dashboard.pbix`** in this repository.
+1. Click on Sales_Dashboard.pbix in this repository.
 2. Click **View Raw** → **Download**.
 3. Open it in **Power BI Desktop**.
 
