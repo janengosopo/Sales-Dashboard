@@ -22,13 +22,13 @@ This dashboard answers:
 
 ## 3. Power BI Features
 
-### a) Data Modeling
+### a. Data Modeling
 - Designed a star schema:
   - Fact table: Sales
   - Dimension tables: Product, Customer, Location, Date
 - Optimized relationships for faster filtering and accurate aggregations.
 
-### b) DAX Measures
+### b. DAX Measures
 ```DAX
 Total Revenue = SUM(Sales[Revenue])
 Total Profit  = SUM(Sales[Profit])
@@ -37,7 +37,7 @@ Last year Revenue = CALCULATE ([Total Revenue],SAMEPERIODLASTYEAR ( 'Date'[Date]
 YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue])
 ```
 
-### c) Visuals and Interactivity
+### c. Visuals and Interactivity
 
 * KPI cards for revenue, profit, margin, and YoY change with conditional formatting.
 * Combined column and line charts for monthly revenue, budget, and margin.
@@ -48,7 +48,23 @@ YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue
 
 ---
 
-## 4. Project Structure
+## 4. Insights of 2024 Performance
+
+### a. Strong YoY Growth
+- Revenue was up **17.8%** to **3.59M**, with profit at **0.20M**.  
+- Growth was high, but margin was thin at **5.6%**.  
+
+### b. Consumer Segment as Revenue Driver
+- Consumer segment had the **highest revenue (1.63M)** and **profit (0.09M)**.  
+- However, **margins were slightly lower** compared to other segments.  
+
+### c. Regional Performance is Uneven
+- **West region** achieved the **highest revenue (1.23M)** and **profit (0.06M)**.  
+- **South region** had the **lowest revenue (0.57M)** and **profit (0.03M)**, significantly lower than the West region.* 
+
+---
+
+## 5. Project Structure
 
 | File / Folder             | Description                    |
 | ------------------------- | ------------------------------ |
@@ -58,7 +74,7 @@ YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue
 
 ---
 
-## 5. How to Use
+## 6. How to Use
 
 ### Option 1: Download the PBIX
 
