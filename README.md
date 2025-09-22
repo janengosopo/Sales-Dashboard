@@ -3,9 +3,12 @@
 ---
 
 ## 1. Project Overview
-This project presents a Sales Performance Dashboard built in Power BI to analyze revenue, profit, margin, and YoY revenue change.
 
-It provides a centralized view of sales performance across customer segments, regions, and products, helping stakeholders track KPIs and identify growth opportunities.
+- Goal: To provide a centralized view of sales performance across customer segments, regions, and products, helping stakeholders track KPIs and identify growth opportunities.
+- Tool: Power BI
+- Project Type: Data cleaning, Data analysis, Data visualization
+- Process: gathered data from Kaggle, cleaned, analysed, and visualised data in Power BI
+
 
 ---
 
