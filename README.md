@@ -63,7 +63,7 @@ YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue
 
 ### c. Regional Performance is Uneven
 - **West region** achieved the **highest revenue (1.23M)** and **profit (0.06M)**.  
-- **South region** had the **lowest revenue (0.57M)** and **profit (0.03M)**, significantly lower than the West region.* 
+- **South region** had the **lowest revenue (0.57M)** and **profit (0.03M)**, significantly lower than the West region.
 
 ---
 
