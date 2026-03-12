@@ -1,5 +1,5 @@
 # Sales Dashboard
-
+![Sales Dashboard](Sales%20Dashboard.png)
 ---
 
 ## 1. Project Overview
