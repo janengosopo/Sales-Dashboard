@@ -62,7 +62,7 @@ If applied in a real business context, this dashboard supports:
 
 - **Data preparation:** Cleaned and standardized source data to ensure quality  
 - **Data modeling:** Designed a star schema for scalable analysis across segment, region, and product dimensions  
-- **Analysis & metrics:** Developed DAX measures for revenue variance, margin calculations, and performance tracking  
+- **Analysis & metrics:** Developed DAX measures for margin calculations, YOY revenue, and performance tracking  
 - **Visualization:** Built an interactive dashboard with consistent margin-based color coding for decision support  
 - **Tools:** Power BI, Power Query, DAX  
 
@@ -71,7 +71,7 @@ If applied in a real business context, this dashboard supports:
 ## Caveats and Assumptions
 
 - Budget allocation at sub-category level is estimated from historical revenue share, not actual targets  
-- Margin thresholds (4%, 7%, 10%) are illustrative; align with finance-defined targets for operational use  
+- Margin thresholds (4%, 7%, 10%) are illustrative; it should be aligned with finance-defined targets for operational use  
 - No pipeline or forecast data included; analysis is based on historical performance only  
 - Dataset is based on the Superstore sample and used for demonstration purposes  
 
