@@ -15,7 +15,7 @@ It is designed to answer three key business questions:
 3. **Where should we act next?**  
    - Identify underperforming areas impacting profitability  
 
-![Dashboard Screenshot](Sales/Dashboard.png)
+![Dashboard Screenshot](Dashboard/Screenshot.png)
 
 ---
 
