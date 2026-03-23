@@ -31,11 +31,11 @@ It is designed to answer three key business questions:
    - **Recommendation:** Identify key drivers behind H2 performance and replicate them earlier in the year.
 
 3. **Furniture is the primary driver of low margin**  
-   - Furniture shows a critically low margin of 3.9% (<4%), significantly impacting overall profitability.  
-   - **Recommendation:** Review pricing, discounting practices, and supplier costs for the Furniture segment.
+   - Furniture shows a critically low margin of 3.9% (<4%), it significantly impacts overall profitability.  
+   - **Recommendation:** Review pricing, discounting practices, and costs for the Furniture segment.
 
 4. **Margin is borderline across all regions**  
-   - All regions have margins between 5.3%–6%, indicating systemic profitability issues.  
+   - All regions have margins between 5.3%–6%, this indicates systemic profitability issues.  
    - West region had the highest revenue but lowest margin (5.3%).  
    - **Recommendation:** Investigate whether high revenue is driven primarily by discounting.
 
