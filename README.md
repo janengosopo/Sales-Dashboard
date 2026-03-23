@@ -1,91 +1,94 @@
-# Sales Dashboard
-![Sales Dashboard](Sales%20Dashboard.png)
----
+# Sales Performance Dashboard
 
-## 1. Project Overview
+## Project Overview
+This dashboard supports sales managers and team leads in monthly performance reviews by identifying revenue gaps, margin risks, and highlighting areas to focus on for improving profitability.  
 
-- Goal: To provide a centralized view of sales performance across customer segments, regions, and products, helping stakeholders track KPIs and identify growth opportunities.
-- Tool: Power BI
-- Project Type: Data cleaning, Data analysis, Data visualization
-- Process: gathered data from Kaggle, cleaned, analysed, and visualised data in Power BI
+It is designed to answer three key business questions:
 
+1. **How are we performing?**  
+   - Revenue vs budget  
+   - Margin trend  
 
----
+2. **Where are the main drivers of performance?**  
+   - Segment, region, and product breakdown  
 
-## 2. Key Business Questions
-This dashboard answers:
+3. **Where should we act next?**  
+   - Identify underperforming areas impacting profitability  
 
-- What is the overall revenue, profit, margin, and YoY growth?
-- How do monthly revenues compare to the budget?
-- Which segments and regions generate the highest revenue and profit?
-- What are the top 5 revenue-driving products?
-- Where are the opportunities to improve profitability?
+![Dashboard Screenshot](Sales/Dashboard.png)
 
 ---
 
-## 3. Power BI Features
+## Key Insights (2024)
 
-### a. Data Modeling
-- Designed a star schema:
-  - Fact table: Sales
-  - Dimension tables: Product, Customer, Location, Date
-- Optimized relationships for faster filtering and accurate aggregations.
+1. **Growth achieved, but profitability was weak**  
+   - Revenue exceeded budget by 1.1%, but margin was 5.6%, below the acceptable threshold of 7%.  
+   - **Recommendation:** Review pricing strategy and cost structure to improve margin without sacrificing revenue.
 
-### b. DAX Measures
-```DAX
-Total Revenue = SUM(Sales[Revenue])
-Total Profit  = SUM(Sales[Profit])
-Margin        = DIVIDE([Total Profit], [Total Revenue])
-Last year Revenue = CALCULATE ([Total Revenue],SAMEPERIODLASTYEAR ( 'Date'[Date] ))
-YoY Revenue   = DIVIDE([Total Revenue] - [Last Year Revenue], [Last Year Revenue])
-```
+2. **Sales performance was driven by H2**  
+   - Budget was missed in H1 (except January). Recovery started in August, and H2 sales helped achieve the budget target.  
+   - **Hypothesis:** Seasonal demand, campaigns, or discounting strategies influenced H2 performance.  
+   - **Recommendation:** Identify key drivers behind H2 performance and replicate them earlier in the year.
 
-### c. Visuals and Interactivity
+3. **Furniture is the primary driver of low margin**  
+   - Furniture shows a critically low margin of 3.9% (<4%), significantly impacting overall profitability.  
+   - **Recommendation:** Review pricing, discounting practices, and supplier costs for the Furniture segment.
 
-* KPI cards for revenue, profit, margin, and YoY change with conditional formatting.
-* Combined column and line charts for monthly revenue, budget, and margin.
-* Charts showing revenue, profit, and margin by customer segment.
-* Charts showing revenue, profit, and margin by region.
-* Top N filtering to highlight the top 5 products by revenue.
-* Matrix for detailed insights by category, sub-category, and product name.
+4. **Margin is borderline across all regions**  
+   - All regions have margins between 5.3%–6%, indicating systemic profitability issues.  
+   - West region had the highest revenue but lowest margin (5.3%).  
+   - **Recommendation:** Investigate whether high revenue is driven primarily by discounting.
 
----
+5. **High-revenue products are not driving profit**  
+   - Among the top 5 products by revenue, only 2 had healthy margins; others were <3%.  
+   - **Recommendation:** Review pricing or deprioritize low-margin products to reduce profitability leakage.
 
-## 4. Insights of 2024 Performance
-
-### a. Strong YoY Growth
-- Revenue was up **17.8%** to **3.59M**, with profit at **0.20M**.  
-- Growth was high, but margin was thin at **5.6%**.  
-
-### b. Consumer Segment as Revenue Driver
-- Consumer segment had the **highest revenue (1.63M)** and **profit (0.09M)**.  
-- However, **margins were slightly lower** compared to other segments.  
-
-### c. Regional Performance is Uneven
-- **West region** achieved the **highest revenue (1.23M)** and **profit (0.06M)**.  
-- **South region** had the **lowest revenue (0.57M)** and **profit (0.03M)**, significantly lower than the West region.
+6. **Low-performing products should be reviewed**  
+   - Bottom 5 products combine low revenue (<25K) with critically low margins (<1%).  
+   - **Recommendation:** Consider discontinuation or replacement with higher-margin alternatives.
 
 ---
 
-## 5. Project Structure
+## Business Impact (Simulated)
+If applied in a real business context, this dashboard supports:
 
-| File / Folder             | Description                    |
-| ------------------------- | ------------------------------ |
-| **README.md**             | Main project documentation     |
-| **Sales\Dashboard.pbix** | Power BI dashboard file        |
-| **Sales\Dashboard.png**                | Dashboard screenshot|
+- **Sales managers:** Identifying underperforming segments and regions  
+- **Product teams:** Reviewing low-margin and low-performing products  
+- **Finance teams:** Monitoring budget performance and profitability risks  
 
 ---
 
-## 6. How to Use
+## Technical Approach
 
-### Option 1: Download the PBIX
+- **Data preparation:** Cleaned and standardized source data to ensure quality  
+- **Data modeling:** Designed a star schema for scalable analysis across segment, region, and product dimensions  
+- **Analysis & metrics:** Developed DAX measures for revenue variance, margin calculations, and performance tracking  
+- **Visualization:** Built an interactive dashboard with consistent margin-based color coding for decision support  
+- **Tools:** Power BI, Power Query, DAX  
 
-1. Click on Sales Dashboard.pbix in this repository.
-2. Click **View Raw** → **Download**.
-3. Open it in **Power BI Desktop**.
+---
 
-### Option 2: View Screenshot
+## Caveats and Assumptions
 
-For a quick preview, click on Sales Dashboard.png in this repository.
+- Budget allocation at sub-category level is estimated from historical revenue share, not actual targets  
+- Margin thresholds (4%, 7%, 10%) are illustrative; align with finance-defined targets for operational use  
+- No pipeline or forecast data included; analysis is based on historical performance only  
+- Dataset is based on the Superstore sample and used for demonstration purposes  
 
+---
+
+## Project Structure
+
+| File / Folder            | Description                     |
+|---------------------------|---------------------------------|
+| README.md                 | Main project documentation      |
+| Sales/Dashboard.pbix      | Power BI dashboard file         |
+| Sales/Dashboard.png       | Dashboard screenshot            |
+
+---
+
+## How to Use
+
+1. Download the PBIX file from this repository: `Sales/Dashboard.pbix`  
+2. Click **View Raw → Download**  
+3. Open the file in **Power BI Desktop**  
