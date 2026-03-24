@@ -89,6 +89,6 @@ If applied in a real business context, this dashboard supports:
 
 ## How to Use
 
-1. Download the PBIX file from this repository: `Sales/Dashboard.pbix`  
+1. Download the PBIX file from this repository: `Sales Performance Dashboard.pbix`  
 2. Click **View Raw → Download**  
 3. Open the file in **Power BI Desktop**  
