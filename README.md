@@ -83,7 +83,7 @@ If applied in a real business context, this dashboard supports:
 |---------------------------|---------------------------------|
 | README.md                 | Main project documentation      |
 | Sales/Dashboard.pbix      | Power BI dashboard file         |
-| Sales/Dashboard.png       | Dashboard screenshot            |
+| Dashboard/Screenshot.png  | Dashboard screenshot            |
 
 ---
 
